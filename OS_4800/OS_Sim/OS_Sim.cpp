@@ -297,11 +297,19 @@ void IO_Completion_Interrupt(int id)
             }
         }
         /* count값이 일정 이상이고 우선순위가 최상위가 아니면 우선순위를 한단계씩 증가 시켜준다. 실행되면 count =0으로 초기화된다.(line277)*/
+        int sum_flag = 0;
         for(int c = 1;  c < 6; c++){
-            if (proc_tbl[c].count >= 5) {
-                if (proc_tbl[c].priority > 0) { proc_tbl[c].priority--; }
-            }
+            sum_flag += proc_tbl[c].count;
+            if (sum_flag >= 10) {
+                for(int c = 1;  c < 6; c++){
+
+                    if (proc_tbl[c].priority == NUMBER_OF_PRIORITY - 1) { proc_tbl[c].priority--; }
+                    Put_Tail_Q(&run_q[NUMBER_OF_PRIORITY-2],Get_Head_Q(&run_q[NUMBER_OF_PRIORITY-1]));
+                }
         }
+
+        }
+
         //block_q에서 최상단의 프로세스를 가져온다.
         p = Get_Head_Q(&(block_q));
         //만약 block_q가 비어있지 않으면 ready queue에 넣어준다.
