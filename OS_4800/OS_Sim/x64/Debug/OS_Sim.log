@@ -1,0 +1,27 @@
+﻿  OS_Sim.cpp
+C:\Users\jun\Desktop\OS_Sim_1\OS_Sim\OS_Sim.cpp(128,11): error C2228: '.next' 왼쪽에는 클래스/구조체/공용 구조체가 있어야 합니다.
+C:\Users\jun\Desktop\OS_Sim_1\OS_Sim\OS_Sim.cpp(128,11): message : 'proc_tbl_t [4]' 형식입니다.
+C:\Users\jun\Desktop\OS_Sim_1\OS_Sim\OS_Sim.cpp(146,25): error C2664: 'void Put_Tail_Q(proc_tbl_t *,proc_tbl_t *)': 인수 1을(를) 'proc_tbl_t (*)[4]'에서 'proc_tbl_t *'(으)로 변환할 수 없습니다.
+C:\Users\jun\Desktop\OS_Sim_1\OS_Sim\OS_Sim.cpp(146,16): message : 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 괄호가 있는 함수 스타일 캐스트가 필요합니다.
+C:\Users\jun\Desktop\OS_Sim_1\OS_Sim\OS_Sim.cpp(41,6): message : 'Put_Tail_Q' 선언을 참조하십시오.
+C:\Users\jun\Desktop\OS_Sim_1\OS_Sim\OS_Sim.cpp(155,25): error C2664: 'void Put_Tail_Q(proc_tbl_t *,proc_tbl_t *)': 인수 1을(를) 'proc_tbl_t (*)[4]'에서 'proc_tbl_t *'(으)로 변환할 수 없습니다.
+C:\Users\jun\Desktop\OS_Sim_1\OS_Sim\OS_Sim.cpp(155,16): message : 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 괄호가 있는 함수 스타일 캐스트가 필요합니다.
+C:\Users\jun\Desktop\OS_Sim_1\OS_Sim\OS_Sim.cpp(41,6): message : 'Put_Tail_Q' 선언을 참조하십시오.
+C:\Users\jun\Desktop\OS_Sim_1\OS_Sim\OS_Sim.cpp(164,25): error C2664: 'void Put_Tail_Q(proc_tbl_t *,proc_tbl_t *)': 인수 1을(를) 'proc_tbl_t (*)[4]'에서 'proc_tbl_t *'(으)로 변환할 수 없습니다.
+C:\Users\jun\Desktop\OS_Sim_1\OS_Sim\OS_Sim.cpp(164,16): message : 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 괄호가 있는 함수 스타일 캐스트가 필요합니다.
+C:\Users\jun\Desktop\OS_Sim_1\OS_Sim\OS_Sim.cpp(41,6): message : 'Put_Tail_Q' 선언을 참조하십시오.
+C:\Users\jun\Desktop\OS_Sim_1\OS_Sim\OS_Sim.cpp(173,25): error C2664: 'void Put_Tail_Q(proc_tbl_t *,proc_tbl_t *)': 인수 1을(를) 'proc_tbl_t (*)[4]'에서 'proc_tbl_t *'(으)로 변환할 수 없습니다.
+C:\Users\jun\Desktop\OS_Sim_1\OS_Sim\OS_Sim.cpp(173,16): message : 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 괄호가 있는 함수 스타일 캐스트가 필요합니다.
+C:\Users\jun\Desktop\OS_Sim_1\OS_Sim\OS_Sim.cpp(41,6): message : 'Put_Tail_Q' 선언을 참조하십시오.
+C:\Users\jun\Desktop\OS_Sim_1\OS_Sim\OS_Sim.cpp(181,25): error C2664: 'void Put_Tail_Q(proc_tbl_t *,proc_tbl_t *)': 인수 1을(를) 'proc_tbl_t (*)[4]'에서 'proc_tbl_t *'(으)로 변환할 수 없습니다.
+C:\Users\jun\Desktop\OS_Sim_1\OS_Sim\OS_Sim.cpp(181,16): message : 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 괄호가 있는 함수 스타일 캐스트가 필요합니다.
+C:\Users\jun\Desktop\OS_Sim_1\OS_Sim\OS_Sim.cpp(41,6): message : 'Put_Tail_Q' 선언을 참조하십시오.
+C:\Users\jun\Desktop\OS_Sim_1\OS_Sim\OS_Sim.cpp(241,31): error C2664: 'void Put_Tail_Q(proc_tbl_t *,proc_tbl_t *)': 인수 1을(를) 'proc_tbl_t (*)[4]'에서 'proc_tbl_t *'(으)로 변환할 수 없습니다.
+C:\Users\jun\Desktop\OS_Sim_1\OS_Sim\OS_Sim.cpp(241,20): message : 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 괄호가 있는 함수 스타일 캐스트가 필요합니다.
+C:\Users\jun\Desktop\OS_Sim_1\OS_Sim\OS_Sim.cpp(41,6): message : 'Put_Tail_Q' 선언을 참조하십시오.
+C:\Users\jun\Desktop\OS_Sim_1\OS_Sim\OS_Sim.cpp(250,28): error C2664: 'proc_tbl_t *Get_Head_Q(proc_tbl_t *)': 인수 1을(를) 'proc_tbl_t (*)[4]'에서 'proc_tbl_t *'(으)로 변환할 수 없습니다.
+C:\Users\jun\Desktop\OS_Sim_1\OS_Sim\OS_Sim.cpp(250,20): message : 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 괄호가 있는 함수 스타일 캐스트가 필요합니다.
+C:\Users\jun\Desktop\OS_Sim_1\OS_Sim\OS_Sim.cpp(42,13): message : 'Get_Head_Q' 선언을 참조하십시오.
+C:\Users\jun\Desktop\OS_Sim_1\OS_Sim\OS_Sim.cpp(273,35): error C2664: 'void Put_Tail_Q(proc_tbl_t *,proc_tbl_t *)': 인수 1을(를) 'proc_tbl_t (*)[4]'에서 'proc_tbl_t *'(으)로 변환할 수 없습니다.
+C:\Users\jun\Desktop\OS_Sim_1\OS_Sim\OS_Sim.cpp(273,24): message : 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 괄호가 있는 함수 스타일 캐스트가 필요합니다.
+C:\Users\jun\Desktop\OS_Sim_1\OS_Sim\OS_Sim.cpp(41,6): message : 'Put_Tail_Q' 선언을 참조하십시오.
