@@ -302,9 +302,9 @@ void IO_Completion_Interrupt(int id)
             sum_flag += proc_tbl[c].count;
             if (sum_flag >= 10) {
                 for(int c = 1;  c < 6; c++){
-
-                    if (proc_tbl[c].priority == NUMBER_OF_PRIORITY - 1) { proc_tbl[c].priority--; }
-                    Put_Tail_Q(&run_q[NUMBER_OF_PRIORITY-2],Get_Head_Q(&run_q[NUMBER_OF_PRIORITY-1]));
+                    //해당 순위 큐에서 하나씩 빼서 윗순위 큐로 넣어준다. 최상위 큐를 제외한 모든 큐에서 실행하기 때문에 문제가 발생하지 않는다.
+                    if (proc_tbl[c].priority > 0) { proc_tbl[c].priority--; }
+                    Put_Tail_Q(&run_q[proc_tbl[c].priority],Get_Head_Q(&run_q[proc_tbl[c].priority + 1]));
                 }
         }
 
